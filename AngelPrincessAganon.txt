@@ -1,0 +1,19 @@
+import java.util.*;
+public class Ewan{
+	public static void main (String [] args) {
+		
+		Scanner sc = new Scanner (System.in);
+		OrderDetails order = new OrderDetails ();
+         
+		System.out.print("ENTER Order : ");
+		order.setOrder (sc.nextLine());		
+	
+		System.out.print("ENTER Quantity : ");
+		order.setQty (sc.nextInt());
+	
+		System.out.print("Enter Price : ");
+		order.setPrice (sc.nextDouble());
+                order.print();
+	}
+	
+}
